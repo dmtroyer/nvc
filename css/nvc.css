@@ -508,7 +508,7 @@ a:focus {
 #non-violent-communication h1 {
     font-size: 100px;
     -webkit-transform: translateY(1500px);
-    -webkit-transition: all 2s ease-in 0s ;
+    -webkit-transition: all 1s ease-in 0s ;
 }
 
 #non-violent-communication.present h1 {
