@@ -1,26 +1,4 @@
 /*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
-
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 
@@ -86,12 +64,12 @@ body {
     min-height: 740px;
 
     background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(220, 200, 180)), to(rgb(30, 40, 65)));
+    background: -webkit-radial-gradient(rgb(220, 200, 180), rgb(30, 40, 65));
+    background:    -moz-radial-gradient(rgb(220, 200, 180), rgb(30, 40, 65));
+    background:     -ms-radial-gradient(rgb(220, 200, 180), rgb(30, 40, 65));
+    background:      -o-radial-gradient(rgb(220, 200, 180), rgb(30, 40, 65));
+    background:         radial-gradient(rgb(220, 200, 180), rgb(30, 40, 65));
 }
 
 /*
@@ -254,7 +232,7 @@ a:focus {
     padding: 0;
 }
 
-#title .try {
+#who-am-i .try {
     font-size: 64px;
     position: absolute;
     top: -0.5em;
@@ -267,8 +245,8 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#title h1 {
-    font-size: 190px;
+#who-am-i b {
+    font-size: 100px;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -287,14 +265,14 @@ a:focus {
 
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
-#big {
+#nvc {
     width: 600px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
 }
 
-#big b {
+#nvc b {
     display: block;
     font-size: 250px;
     line-height: 250px;
@@ -527,6 +505,45 @@ a:focus {
     cursor: pointer;
 }
 
+#non-violent-communication h1 {
+    font-size: 100px;
+    -webkit-transform: translateY(1500px);
+    -webkit-transition: all 2s ease-in 0s ;
+}
+
+#non-violent-communication.present h1 {
+    -webkit-transform: translateY(0px);
+}
+
+.step b {
+  font-size: 100px;
+}
+
+.step ul {
+  list-style-type: square;
+  font-size: 80px;
+  text-align: left;
+  line-height: 1.5em;
+  list-style-position: inside;
+  transform: translateX(-1000px);
+  -moz-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
+  -webkit-transform: translateX(-1000px);
+  transition: all 0.5s ease-in 0s ;
+  -moz-transition: all 1s ease-in 0s ;
+  -ms-transition: all 1s ease-in 0s ;
+  -o-transition: all 1s ease-in 0s ;
+  -webkit-transition: all 0.5s ease-in 0s ;
+}
+
+.step.present ul {
+  transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
 
 /*
     Now, when we have all the steps styled let's give users a hint how to navigate
